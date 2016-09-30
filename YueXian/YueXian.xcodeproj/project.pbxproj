@@ -13,9 +13,12 @@
 		CC5961C11D9E1B9700D43F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5961BF1D9E1B9700D43F28 /* Main.storyboard */; };
 		CC5961C31D9E1B9700D43F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5961C21D9E1B9700D43F28 /* Assets.xcassets */; };
 		CC5961C61D9E1B9700D43F28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5961C41D9E1B9700D43F28 /* LaunchScreen.storyboard */; };
+		D6EEFED5A4506EAA4A153936 /* libPods-YueXian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A37797343592B19BBCA49F99 /* libPods-YueXian.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0261A67A89FF4AA82F2C8279 /* Pods-YueXian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueXian.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YueXian/Pods-YueXian.debug.xcconfig"; sourceTree = "<group>"; };
+		A37797343592B19BBCA49F99 /* libPods-YueXian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YueXian.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5961B31D9E1B9700D43F28 /* YueXian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YueXian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5961B71D9E1B9700D43F28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC5961B91D9E1B9700D43F28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		CC5961C21D9E1B9700D43F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5961C51D9E1B9700D43F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5961C71D9E1B9700D43F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF17272B7E3C5A6082047B98 /* Pods-YueXian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YueXian.release.xcconfig"; path = "Pods/Target Support Files/Pods-YueXian/Pods-YueXian.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6EEFED5A4506EAA4A153936 /* libPods-YueXian.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CC1DA1FDD5F6437693F8075 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0261A67A89FF4AA82F2C8279 /* Pods-YueXian.debug.xcconfig */,
+				CF17272B7E3C5A6082047B98 /* Pods-YueXian.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9B428BB6AB3FABBE67FBE1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A37797343592B19BBCA49F99 /* libPods-YueXian.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CC5961AA1D9E1B9700D43F28 = {
 			isa = PBXGroup;
 			children = (
 				CC5961B51D9E1B9700D43F28 /* YueXian */,
 				CC5961B41D9E1B9700D43F28 /* Products */,
+				1CC1DA1FDD5F6437693F8075 /* Pods */,
+				A9B428BB6AB3FABBE67FBE1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +82,9 @@
 		CC5961B51D9E1B9700D43F28 /* YueXian */ = {
 			isa = PBXGroup;
 			children = (
-				CC5961B91D9E1B9700D43F28 /* AppDelegate.h */,
-				CC5961BA1D9E1B9700D43F28 /* AppDelegate.m */,
-				CC5961BC1D9E1B9700D43F28 /* ViewController.h */,
-				CC5961BD1D9E1B9700D43F28 /* ViewController.m */,
-				CC5961BF1D9E1B9700D43F28 /* Main.storyboard */,
-				CC5961C21D9E1B9700D43F28 /* Assets.xcassets */,
-				CC5961C41D9E1B9700D43F28 /* LaunchScreen.storyboard */,
-				CC5961C71D9E1B9700D43F28 /* Info.plist */,
+				CC5961D01D9E1D2D00D43F28 /* Controller */,
+				CC5961CF1D9E1D1900D43F28 /* View */,
+				CC5961CE1D9E1D1000D43F28 /* Mode */,
 				CC5961B61D9E1B9700D43F28 /* Supporting Files */,
 			);
 			path = YueXian;
@@ -74,9 +93,38 @@
 		CC5961B61D9E1B9700D43F28 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC5961C71D9E1B9700D43F28 /* Info.plist */,
+				CC5961C21D9E1B9700D43F28 /* Assets.xcassets */,
+				CC5961B91D9E1B9700D43F28 /* AppDelegate.h */,
+				CC5961BA1D9E1B9700D43F28 /* AppDelegate.m */,
 				CC5961B71D9E1B9700D43F28 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC5961CE1D9E1D1000D43F28 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mode;
+			sourceTree = "<group>";
+		};
+		CC5961CF1D9E1D1900D43F28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC5961BF1D9E1B9700D43F28 /* Main.storyboard */,
+				CC5961C41D9E1B9700D43F28 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CC5961D01D9E1D2D00D43F28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC5961BC1D9E1B9700D43F28 /* ViewController.h */,
+				CC5961BD1D9E1B9700D43F28 /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC5961CA1D9E1B9700D43F28 /* Build configuration list for PBXNativeTarget "YueXian" */;
 			buildPhases = (
+				E6FF657E0E28E657C60D7FF9 /* [CP] Check Pods Manifest.lock */,
 				CC5961AF1D9E1B9700D43F28 /* Sources */,
 				CC5961B01D9E1B9700D43F28 /* Frameworks */,
 				CC5961B11D9E1B9700D43F28 /* Resources */,
+				29D0B72FCE7EA676B64051FA /* [CP] Embed Pods Frameworks */,
+				5FB87A7678831DCB39E4E0CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,7 +161,7 @@
 				TargetAttributes = {
 					CC5961B21D9E1B9700D43F28 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = V2VWN264AX;
+						DevelopmentTeam = 77F9RUD5FL;
 					};
 				};
 			};
@@ -144,6 +195,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29D0B72FCE7EA676B64051FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YueXian/Pods-YueXian-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FB87A7678831DCB39E4E0CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YueXian/Pods-YueXian-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6FF657E0E28E657C60D7FF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC5961AF1D9E1B9700D43F28 /* Sources */ = {
@@ -262,8 +361,10 @@
 		};
 		CC5961CB1D9E1B9700D43F28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0261A67A89FF4AA82F2C8279 /* Pods-YueXian.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YueXian/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mr-DuPeng-163.com.YueXian";
@@ -273,8 +374,10 @@
 		};
 		CC5961CC1D9E1B9700D43F28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF17272B7E3C5A6082047B98 /* Pods-YueXian.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YueXian/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mr-DuPeng-163.com.YueXian";
@@ -301,6 +404,7 @@
 				CC5961CC1D9E1B9700D43F28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
